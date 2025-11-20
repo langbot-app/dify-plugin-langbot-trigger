@@ -13,7 +13,7 @@ description:
   zh_Hans: 处理各种即时通信消息的平台，支持QQ、微信、Telegram、Discord、Slack、Lark、钉钉等。
   pt_BR: Plugin para processar mensagens de IMs como QQ, WeChat, Telegram, Discord, Slack, Lark, DingTalk, etc.
 icon: icon.svg
-icon_dark: icon-dark.svg
+icon_dark: icon.svg
 resource:
   memory: 268435456
   permission:

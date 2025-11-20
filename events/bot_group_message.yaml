@@ -1,0 +1,69 @@
+identity:
+  name: bot_group_message
+  author: rockchinq
+  label:
+    en_US: "Bot Group Message Received"
+    zh_Hans: "Bot 收到群消息"
+    pt_BR: "Mensagem de Bot Grupo Recebida"
+    ja_JP: "Bot グループメッセージ受信"
+
+description:
+  en_US: "Triggered when a bot receives a group message."
+  zh_Hans: "当机器人收到群消息时触发。"
+  pt_BR: "Triggered when a bot receives a group message."
+  ja_JP: "Bot グループメッセージ受信時にトリガーされます。"
+
+parameters: []
+  # - name: "sample_filter"
+  #   type: "string"
+  #   required: false
+  #   label:
+  #     en_US: "Sample Filter"
+  #     zh_Hans: "示例过滤器"
+  #     pt_BR: "Filtro de Exemplo"
+  #     ja_JP: "サンプルフィルター"
+  #   help:
+  #     en_US: "Optionally filter events before executing the trigger."
+  #     zh_Hans: "在执行触发器之前可选地过滤事件。"
+  #     pt_BR: "Opcionalmente filtre eventos antes de executar o gatilho."
+  #     ja_JP: "トリガーを実行する前にイベントをフィルタリングします (任意)。"
+
+output_schema:
+  type: object
+  properties:
+    message:
+      type: array
+      items:
+        type: object
+    bot_uuid:
+      type: string
+    adapter_name:
+      type: string
+    group:
+      type: object
+      properties:
+        id: string
+        name: string
+    group_id:
+      type: string
+    group_name:
+      type: string
+    sender:
+      type: object
+      properties:
+        id: string
+        name: string
+    sender_id:
+      type: string
+    sender_name:
+      type: string
+    plain_text:
+      type: string
+    timestamp:
+      type: number
+    raw_event:
+      type: object
+
+extra:
+  python:
+    source: events/bot_group_message.py

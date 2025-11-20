@@ -23,18 +23,24 @@ class LangbotTriggerTrigger(Trigger):
     """
     def _dispatch_event(self, subscription: Subscription, request: Request) -> EventDispatch:
         payload: Mapping[str, Any] = self._validate_payload(request)
+        print(payload)
         response = Response(response='{"status": "ok"}', status=200, mimetype="application/json")
         events: list[str] = self._dispatch_trigger_events(payload=payload)
-        return EventDispatch(events=events, response=response)
+        print("events: ", events)
+        print("payload: ", payload)
+        return EventDispatch(events=events, response=response, payload=payload)
 
     def _dispatch_trigger_events(self, payload: Mapping[str, Any]) -> list[str]:
         """Dispatch events based on webhook payload."""
         events = []
         # Get the event type from the payload
-        event_type = payload.get("type", "")
+        event_type = payload.get("event_type", "")
 
-        if event_type.startswith("my-event-type"):
-            events.append("langbot_trigger_event")
+        if event_type.startswith("bot.person_message"):
+            events.append("bot_person_message")
+
+        if event_type.startswith("bot.group_message"):
+            events.append("bot_group_message")
 
         return events
 
