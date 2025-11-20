@@ -1,0 +1,43 @@
+version: 0.0.1
+type: plugin
+author: rockchinq
+name: langbot_trigger
+label:
+  en_US: langbot_trigger
+  ja_JP: langbot_trigger
+  zh_Hans: langbot_trigger
+  pt_BR: langbot_trigger
+description:
+  en_US: All-in-one platform for receiving message from IMs like QQ, WeChat, Telegram, Discord, Slack, Lark, DingTalk e.g.
+  ja_JP: 各種IMからのメッセージを受信するためのプラグイン。QQ、WeChat、Telegram、Discord、Slack、Lark、DingTalkなど。
+  zh_Hans: 处理各种即时通信消息的平台，支持QQ、微信、Telegram、Discord、Slack、Lark、钉钉等。
+  pt_BR: Plugin para processar mensagens de IMs como QQ, WeChat, Telegram, Discord, Slack, Lark, DingTalk, etc.
+icon: icon.svg
+icon_dark: icon-dark.svg
+resource:
+  memory: 268435456
+  permission:
+    tool:
+      enabled: true
+    app:
+      enabled: true
+    storage:
+      enabled: true
+      size: 1048576
+plugins:
+  triggers:
+    - provider/langbot_trigger.yaml
+meta:
+  version: 0.0.1
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+  minimum_dify_version: 1.10.0
+created_at: 2025-11-20T13:40:32.12946+08:00
+privacy: PRIVACY.md
+repo: https://github.com/langbot-app/dify-plugin-langbot-trigger
+verified: false
