@@ -18,6 +18,8 @@
 
 5. 收到配置的机器人消息，或测试 LangBot 流水线调试页面。
 
+> 如果你想要接收其他平台(如 Telegram、Discord、Slack、LINE、Lark、钉钉)的消息，你需要按照 [LangBot 文档](https://docs.langbot.app/zh/deploy/platforms/readme.html) 配置你的机器人。
+
 ![Pipeline Debug Page](./_assets/pipeline_debug.png)
 
 6. 现在可以使用此插件在收到 LangBot 实例的消息时触发 Dify 工作流。

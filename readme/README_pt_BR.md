@@ -17,6 +17,8 @@ Este plugin de trigger é utilizado para processar eventos de mensagens recebida
 
 5. Receba mensagens dos bots configurados ou teste na página de depuração de pipeline do LangBot.
 
+> Se você quiser receber mensagens de outras plataformas (como Telegram, Discord, Slack, LINE, Lark, DingTalk), você deve configurar seus bots conforme a [documentação do LangBot](https://docs.langbot.app/en/deploy/platforms/readme.html).
+
 ![Página de Depuração de Pipeline](./_assets/pipeline_debug.png)
 
 6. Agora você pode usar este plugin para acionar fluxos de trabalho do Dify sempre que uma mensagem de uma instância LangBot for recebida.

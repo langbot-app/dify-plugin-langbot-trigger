@@ -18,6 +18,8 @@ This trigger plugin is used to process message events from LangBot Webhook. It c
 
 5. Receive messages from configured bots, or test it in LangBot pipeline debug page.
 
+> If you wang to receive messages from other platforms(e.g. Telegram, Discord, Slack, LINE, Lark, DingTalk), you should configure your bots according to the [LangBot documentation](https://docs.langbot.app/en/deploy/platforms/readme.html).
+
 ![Pipeline Debug Page](./_assets/pipeline_debug.png)
 
 6. You can now use this plugin to trigger Dify workflows when a message is received from a LangBot instance.

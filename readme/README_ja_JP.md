@@ -18,6 +18,8 @@
 
 5. 設定済みボットからメッセージを受信、またはLangBotのパイプラインデバッグページでテストします。
 
+> 他のプラットフォーム(例: Telegram、Discord、Slack、LINE、Lark、DingTalk)からメッセージを受信する場合は、[LangBotドキュメント](https://docs.langbot.app/en/deploy/platforms/readme.html) に従ってボットを設定する必要があります。
+
 ![Pipeline Debug Page](./_assets/pipeline_debug.png)
 
 6. これで、LangBotインスタンスからメッセージを受信すると、このプラグインでDifyワークフローをトリガーできるようになります。

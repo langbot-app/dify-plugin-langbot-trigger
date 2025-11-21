@@ -1,17 +1,17 @@
-version: 0.0.1
+version: 0.0.2
 type: plugin
 author: rockchinq
 name: langbot_trigger
 label:
-  en_US: langbot_trigger
-  ja_JP: langbot_trigger
-  zh_Hans: langbot_trigger
-  pt_BR: langbot_trigger
+  en_US: LangBot Trigger
+  ja_JP: LangBot Trigger
+  zh_Hans: LangBot 触发器
+  pt_BR: LangBot Trigger
 description:
-  en_US: All-in-one platform for receiving message from IMs like QQ, WeChat, Telegram, Discord, Slack, Lark, DingTalk e.g.
-  ja_JP: 各種IMからのメッセージを受信するためのプラグイン。QQ、WeChat、Telegram、Discord、Slack、Lark、DingTalkなど。
-  zh_Hans: 处理各种即时通信消息的平台，支持QQ、微信、Telegram、Discord、Slack、Lark、钉钉等。
-  pt_BR: Plugin para processar mensagens de IMs como QQ, WeChat, Telegram, Discord, Slack, Lark, DingTalk, etc.
+  en_US: Open-source platform for receiving message from IMs like QQ, WeChat, Telegram, Discord, Slack, LINE, Lark, DingTalk e.g.
+  ja_JP: 各種IMからのメッセージを受信するためのオープンソースプラットフォーム。QQ、WeChat、Telegram、Discord、Slack、LINE、Lark、DingTalkなど。
+  zh_Hans: 处理各种即时通信消息的开源平台，支持 QQ、微信、企微、公众号、飞书、Telegram、Discord、Slack、Lark、钉钉等平台。
+  pt_BR: Plataforma open-source para processar mensagens de IMs como QQ, WeChat, Telegram, Discord, Slack, LINE, Lark, DingTalk, etc.
 icon: icon.svg
 icon_dark: icon.svg
 resource:
