@@ -12,6 +12,8 @@ identity:
     pt_BR: "All-in-one platform for receiving message from IMs like QQ, WeChat, Telegram, Discord, Slack, Lark, DingTalk e.g."
     ja_JP: "All-in-one platform for receiving message from IMs like QQ, WeChat, Telegram, Discord, Slack, Lark, DingTalk e.g."
   icon: "icon.svg"
+  tags:
+    - webhooks
 
 
 subscription_schema: []
