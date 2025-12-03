@@ -56,6 +56,21 @@ subscription_constructor:
       pt_BR: "Selecione quais eventos de gatilho devem ser entregues para esta inscrição."
       ja_JP: "このサブスクリプションに配信するトリガーイベントを選択します。"
 
+  - name: "skip_pipeline"
+    type: "boolean"
+    required: false
+    default: false
+    label:
+      en_US: "Skip LangBot Pipeline"
+      zh_Hans: "跳过 LangBot 管道"
+      pt_BR: "Pular Pipeline do LangBot"
+      ja_JP: "LangBot パイプラインをスキップ"
+    help:
+      en_US: "When enabled, instructs LangBot to skip pipeline processing for received messages. The messages will be treated as notifications only."
+      zh_Hans: "启用后，指示 LangBot 跳过接收消息的管道处理。消息将仅作为通知处理。"
+      pt_BR: "Quando habilitado, instrui o LangBot a pular o processamento de pipeline para mensagens recebidas. As mensagens serão tratadas apenas como notificações."
+      ja_JP: "有効にすると、LangBot に受信メッセージのパイプライン処理をスキップするように指示します。メッセージは通知としてのみ扱われます。"
+
   credentials_schema: {}
     # api_key:
     #   type: "secret-input"

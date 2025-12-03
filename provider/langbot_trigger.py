@@ -1,3 +1,4 @@
+import json
 import time
 from collections.abc import Mapping
 from typing import Any
@@ -24,10 +25,21 @@ class LangbotTriggerTrigger(Trigger):
     def _dispatch_event(self, subscription: Subscription, request: Request) -> EventDispatch:
         payload: Mapping[str, Any] = self._validate_payload(request)
         print(payload)
-        response = Response(response='{"status": "ok"}', status=200, mimetype="application/json")
+
+        # Check if skip_pipeline is enabled in subscription properties
+        skip_pipeline = subscription.properties.get("skip_pipeline", False)
+
+        # Build response with skip_pipeline parameter
+        response_data = {
+            "status": "ok",
+            "skip_pipeline": skip_pipeline
+        }
+        response = Response(response=json.dumps(response_data), status=200, mimetype="application/json")
+
         events: list[str] = self._dispatch_trigger_events(payload=payload)
         print("events: ", events)
         print("payload: ", payload)
+        print("skip_pipeline: ", skip_pipeline)
         return EventDispatch(events=events, response=response, payload=payload)
 
     def _dispatch_trigger_events(self, payload: Mapping[str, Any]) -> list[str]:
@@ -70,8 +82,9 @@ class LangbotTriggerSubscriptionConstructor(TriggerSubscriptionConstructor):
         credentials: Mapping[str, Any],
         credential_type: CredentialType,
     ) -> Subscription:
-        
+
         events: list[str] = parameters.get("events", [])
+        skip_pipeline: bool = parameters.get("skip_pipeline", False)
 
         # Replace this placeholder with API calls to register a webhook
         return Subscription(
@@ -80,6 +93,7 @@ class LangbotTriggerSubscriptionConstructor(TriggerSubscriptionConstructor):
             properties={
                 "external_id": "example-subscription",
                 "events": events,
+                "skip_pipeline": skip_pipeline,
             },
         )
 
