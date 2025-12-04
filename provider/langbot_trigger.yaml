@@ -12,24 +12,24 @@ identity:
     pt_BR: "All-in-one platform for receiving message from IMs like QQ, WeChat, Telegram, Discord, Slack, Lark, DingTalk e.g."
     ja_JP: "All-in-one platform for receiving message from IMs like QQ, WeChat, Telegram, Discord, Slack, Lark, DingTalk e.g."
   icon: "icon.svg"
-  tags:
-    - webhooks
+  tags: []
 
 
-subscription_schema: []
-  # - name: "webhook_secret"
-  #   type: "secret-input"
-  #   required: false
-  #   label:
-  #     en_US: "Webhook Secret"
-  #     zh_Hans: "Webhook 密钥"
-  #     pt_BR: "Segredo do Webhook"
-  #     ja_JP: "Webhookシークレット"
-  #   help:
-  #     en_US: "Optional shared secret used to validate inbound webhook signatures."
-  #     zh_Hans: "用于验证 Webhook 签名的可选共享密钥。"
-  #     pt_BR: "Segredo compartilhado opcional usado para validar assinaturas de webhook."
-  #     ja_JP: "受信Webhookの署名を検証するためのオプションの共有シークレットです。"
+subscription_schema:
+  - name: "skip_pipeline"
+    type: "boolean"
+    required: false
+    default: true
+    label:
+      en_US: "Skip LangBot Pipeline"
+      zh_Hans: "跳过 LangBot 流水线"
+      pt_BR: "Pular Pipeline do LangBot"
+      ja_JP: "LangBot パイプラインをスキップ"
+    help:
+      en_US: "When enabled, instructs LangBot to skip pipeline processing for received messages. The messages will be treated as notifications only."
+      zh_Hans: "启用后，指示 LangBot 跳过接收消息的管道处理。消息将仅作为通知处理。"
+      pt_BR: "Quando habilitado, instrui o LangBot a pular o processamento de pipeline para mensagens recebidas. As mensagens serão tratadas apenas como notificações."
+      ja_JP: "有効にすると、LangBot に受信メッセージのパイプライン処理をスキップするように指示します。メッセージは通知としてのみ扱われます。"
 
 subscription_constructor:
   parameters:
