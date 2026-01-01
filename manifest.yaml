@@ -1,4 +1,4 @@
-version: 0.1.3
+version: 0.1.4
 type: plugin
 author: rockchinq
 name: langbot_trigger
@@ -8,10 +8,10 @@ label:
   zh_Hans: LangBot 触发器
   pt_BR: LangBot Trigger
 description:
-  en_US: Open-source platform for receiving message from IMs like QQ, WeChat, Telegram, Discord, Slack, LINE, Lark, DingTalk e.g.
-  ja_JP: 各種IMからのメッセージを受信するためのオープンソースプラットフォーム。QQ、WeChat、Telegram、Discord、Slack、LINE、Lark、DingTalkなど。
+  en_US: Open-source platform for receiving message from IMs like Telegram, Discord, Slack, LINE, Lark, QQ, WeChat, DingTalk e.g.
+  ja_JP: 各種IMからのメッセージを受信するためのオープンソースプラットフォーム。LINE、Telegram、Discord、Slack、Lark、QQ、WeChat、DingTalkなど。
   zh_Hans: 处理各种即时通信消息的开源平台，支持 QQ、微信、企微、公众号、飞书、Telegram、Discord、Slack、Lark、钉钉等平台。
-  pt_BR: Plataforma open-source para processar mensagens de IMs como QQ, WeChat, Telegram, Discord, Slack, LINE, Lark, DingTalk, etc.
+  pt_BR: Plataforma open-source para processar mensagens de IMs como LINE, Telegram, Discord, Slack, Lark, QQ, WeChat, DingTalk, etc.
 icon: icon.svg
 icon_dark: icon.svg
 resource:

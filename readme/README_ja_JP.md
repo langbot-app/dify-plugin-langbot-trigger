@@ -1,13 +1,13 @@
 # LangBot Trigger プラグイン
 
-[LangBot](https://github.com/langbot-app/LangBot) は、オープンソースのLLMネイティブなインスタントメッセージングボット開発プラットフォームです。エージェント、RAG、MCPなどのLLMアプリケーション機能を備え、グローバルなIMプラットフォームに対応し、豊富なAPIインターフェースを提供、カスタム開発をサポートします。
+[LangBot](https://github.com/langbot-app/LangBot?utm_source=langbot_trigger) は、オープンソースのLLMネイティブなインスタントメッセージングボット開発プラットフォームです。エージェント、RAG、MCPなどのLLMアプリケーション機能を備え、グローバルなIMプラットフォームに対応し、豊富なAPIインターフェースを提供、カスタム開発をサポートします。
 
 このトリガープラグインは、LangBot Webhookからのメッセージイベントを処理するために使用します。LangBotインスタンスからメッセージを受信した際に、Difyのワークフローをトリガーできます。
 
 ## 使い方
 
 1. このプラグインをDifyにインストールします。
-2. [LangBotドキュメント](https://docs.langbot.app/ja/insight/guide.html) に従ってLangBotインスタンスを設定します。
+2. [LangBotドキュメント](https://docs.langbot.app/ja/insight/guide.html?utm_source=langbot_trigger) に従ってLangBotインスタンスを設定します。
 3. Difyでサブスクリプションページを開き、Webhook URLをコピーします。
 
 ![Subscription Page](./_assets/config_sub.png)
@@ -18,7 +18,7 @@
 
 5. 設定済みボットからメッセージを受信、またはLangBotのパイプラインデバッグページでテストします。
 
-> 他のプラットフォーム(例: Telegram、Discord、Slack、LINE、Lark、DingTalk)からメッセージを受信する場合は、[LangBotドキュメント](https://docs.langbot.app/en/deploy/platforms/readme.html) に従ってボットを設定する必要があります。
+> 他のプラットフォーム(例: Telegram、Discord、Slack、LINE、Lark、DingTalk)からメッセージを受信する場合は、[LangBotドキュメント](https://docs.langbot.app/en/deploy/platforms/readme.html?utm_source=langbot_trigger) に従ってボットを設定する必要があります。
 
 ![Pipeline Debug Page](./_assets/pipeline_debug.png)
 
