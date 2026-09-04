@@ -6,7 +6,7 @@ Este plugin de trigger é utilizado para processar eventos de mensagens recebida
 ## Como usar
 
 1. Instale este plugin no Dify.
-2. Configure a instância LangBot conforme a [documentação do LangBot](https://docs.langbot.app/pt/insight/guide.html?utm_source=langbot_trigger).
+2. Configure a instância LangBot conforme a [documentação do LangBot](https://langbot.app/docs/pt/insight/guide.html?utm_source=langbot_trigger).
 3. Abra a página de assinatura no Dify e copie a URL do Webhook.
 
 ![Página de Assinatura](./_assets/config_sub.png)
@@ -17,7 +17,7 @@ Este plugin de trigger é utilizado para processar eventos de mensagens recebida
 
 5. Receba mensagens dos bots configurados ou teste na página de depuração de pipeline do LangBot.
 
-> Se você quiser receber mensagens de outras plataformas (como Telegram, Discord, Slack, LINE, Lark, DingTalk), você deve configurar seus bots conforme a [documentação do LangBot](https://docs.langbot.app/en/deploy/platforms/readme.html?utm_source=langbot_trigger).
+> Se você quiser receber mensagens de outras plataformas (como Telegram, Discord, Slack, LINE, Lark, DingTalk), você deve configurar seus bots conforme a [documentação do LangBot](https://langbot.app/docs/en/deploy/platforms/readme.html?utm_source=langbot_trigger).
 
 ![Página de Depuração de Pipeline](./_assets/pipeline_debug.png)
 

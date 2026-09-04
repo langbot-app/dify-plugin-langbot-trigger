@@ -7,7 +7,7 @@
 ## 使い方
 
 1. このプラグインをDifyにインストールします。
-2. [LangBotドキュメント](https://docs.langbot.app/ja/insight/guide.html?utm_source=langbot_trigger) に従ってLangBotインスタンスを設定します。
+2. [LangBotドキュメント](https://langbot.app/docs/ja/insight/guide.html?utm_source=langbot_trigger) に従ってLangBotインスタンスを設定します。
 3. Difyでサブスクリプションページを開き、Webhook URLをコピーします。
 
 ![Subscription Page](./_assets/config_sub.png)
@@ -18,7 +18,7 @@
 
 5. 設定済みボットからメッセージを受信、またはLangBotのパイプラインデバッグページでテストします。
 
-> 他のプラットフォーム(例: Telegram、Discord、Slack、LINE、Lark、DingTalk)からメッセージを受信する場合は、[LangBotドキュメント](https://docs.langbot.app/en/deploy/platforms/readme.html?utm_source=langbot_trigger) に従ってボットを設定する必要があります。
+> 他のプラットフォーム(例: Telegram、Discord、Slack、LINE、Lark、DingTalk)からメッセージを受信する場合は、[LangBotドキュメント](https://langbot.app/docs/en/deploy/platforms/readme.html?utm_source=langbot_trigger) に従ってボットを設定する必要があります。
 
 ![Pipeline Debug Page](./_assets/pipeline_debug.png)
 

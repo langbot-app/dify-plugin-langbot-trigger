@@ -7,7 +7,7 @@
 ## 使用方法
 
 1. 安装此插件到 Dify。
-2. 按照 [LangBot 文档](https://docs.langbot.app/zh/insight/guide.html?utm_source=langbot_trigger) 配置 LangBot 实例。
+2. 按照 [LangBot 文档](https://langbot.app/docs/zh/insight/guide.html?utm_source=langbot_trigger) 配置 LangBot 实例。
 3. 在 Dify 中打开订阅页面，复制 Webhook URL。
 
 ![Subscription Page](./_assets/config_sub.png)
@@ -18,7 +18,7 @@
 
 5. 收到配置的机器人消息，或测试 LangBot 流水线调试页面。
 
-> 如果你想要接收其他平台(如 Telegram、Discord、Slack、LINE、Lark、钉钉)的消息，你需要按照 [LangBot 文档](https://docs.langbot.app/zh/deploy/platforms/readme.html?utm_source=langbot_trigger) 配置你的机器人。
+> 如果你想要接收其他平台(如 Telegram、Discord、Slack、LINE、Lark、钉钉)的消息，你需要按照 [LangBot 文档](https://langbot.app/docs/zh/deploy/platforms/readme.html?utm_source=langbot_trigger) 配置你的机器人。
 
 ![Pipeline Debug Page](./_assets/pipeline_debug.png)
 

@@ -7,7 +7,7 @@ This trigger plugin is used to process message events from LangBot Webhook. It c
 ## Usage
 
 1. Install this plugin in Dify.
-2. Setup LangBot instance according to the [LangBot documentation](https://docs.langbot.app/en/insight/guide.html?utm_source=langbot_trigger).
+2. Setup LangBot instance according to the [LangBot documentation](https://langbot.app/docs/en/insight/guide.html?utm_source=langbot_trigger).
 3. Open subscription page in Dify, copy the Webhook URL.
 
 ![Subscription Page](./_assets/config_sub.png)
@@ -18,7 +18,7 @@ This trigger plugin is used to process message events from LangBot Webhook. It c
 
 5. Receive messages from configured bots, or test it in LangBot pipeline debug page.
 
-> If you want to receive messages from other platforms(e.g. Telegram, Discord, Slack, LINE, Lark, DingTalk), you should configure your bots according to the [LangBot documentation](https://docs.langbot.app/en/deploy/platforms/readme.html?utm_source=langbot_trigger).
+> If you want to receive messages from other platforms(e.g. Telegram, Discord, Slack, LINE, Lark, DingTalk), you should configure your bots according to the [LangBot documentation](https://langbot.app/docs/en/deploy/platforms/readme.html?utm_source=langbot_trigger).
 
 ![Pipeline Debug Page](./_assets/pipeline_debug.png)
 
